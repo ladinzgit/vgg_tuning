@@ -23,7 +23,7 @@ def set_seed(seed: int = FIXED_SEED):
 # 1. CLI args
 def get_args():
     p = argparse.ArgumentParser()
-    p.add_argument("--epochs", type=int, default=30)
+    p.add_argument("--epochs", type=int, default=100)
     p.add_argument("--lr", type=float, default=1e-3)
     p.add_argument("--batch_size", type=int, default=128)
     p.add_argument("--data_root", type=str, default="../../data/")

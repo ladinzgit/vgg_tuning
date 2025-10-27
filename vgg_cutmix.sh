@@ -21,7 +21,7 @@ SUITE="cutmix5"
 echo "[RUN] suite=$SUITE"
 
 python train_vgg.py \
-  --epochs 30 --lr 1e-3 --batch_size 128 \
+  --epochs 100 --lr 1e-3 --batch_size 128 \
   --suite $SUITE \
   --data_root ../../data/ \
   --logdir logs
