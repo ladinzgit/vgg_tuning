@@ -6,8 +6,8 @@
 #SBATCH --mem-per-gpu=30G
 #SBATCH -p batch_ugrad
 #SBATCH -t 1-0
-#SBATCH -o logs/slurm/%x-%A_%a.out
-#SBATCH -e logs/slurm/%x-%A_%a.err
+#SBATCH -o logs/slurm-%A.out
+#SBATCH -e logs/slurm-%A.err
 
 set -euo pipefail
 mkdir -p logs/slurm logs/cutmix5
