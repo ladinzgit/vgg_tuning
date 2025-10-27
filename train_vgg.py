@@ -40,6 +40,7 @@ class VGG(nn.Module):
         super().__init__()
         blocks = [2,2,3,3,3]  
         feats = []
+        in_ch = 3  # RGB input
         for b, num_convs in enumerate(blocks):
             out_ch = widths[b]
             for _ in range(num_convs):
