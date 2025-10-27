@@ -4,7 +4,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-gpu=8
 #SBATCH --mem-per-gpu=30G
-#SBATCH -p batch_ugrad
+#SBATCH -p batch_ugr
 #SBATCH -t 1-0
 #SBATCH -o logs/slurm/%x-%A_%a.out
 #SBATCH -e logs/slurm/%x-%A_%a.err
